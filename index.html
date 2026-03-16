@@ -144,7 +144,7 @@
   .vendor-name { font-size: 12px; font-weight: 800; margin-bottom: 10px; }
   .gotcha-list { list-style: none; }
   .gotcha-list li { font-size: 12px; color: #475569; padding: 5px 0 5px 18px; border-bottom: 1px solid #f1f5f9; position: relative; }
-  .gotcha-list li::before { content: '⚠'; position: absolute; left: 0; font-size: 10px; }
+  .gotcha-list li::before { content: '!'; position: absolute; left: 0; font-size: 10px; }
   .gotcha-list li:last-child { border-bottom: none; }
 
   @media (max-width: 768px) {
@@ -346,16 +346,16 @@
   <div class="compare-wrap">
     <div class="grid-2" style="gap:0">
       <div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>Customer data ownership</strong>: You own all Customer Content on both paths</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>No training on customer data</strong>: Contractual, not policy, on both paths</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>48-hour breach notification</strong>: Cl. 5.3 applies on both paths</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>Same security certifications</strong>: SOC 1/2, ISO 27001/17/18/27701</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>Customer data ownership</strong>: You own all Customer Content on both paths</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>No training on customer data</strong>: Contractual, not policy, on both paths</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>48-hour breach notification</strong>: Cl. 5.3 applies on both paths</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>Same security certifications</strong>: SOC 1/2, ISO 27001/17/18/27701</div></div>
       </div>
       <div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>SLA commitments</strong>: Service level commitments carry forward on both paths</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>AI Output ownership</strong>: Customer owns all Outputs on both paths</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>30-day notice for Product Terms changes</strong>: Both paths have this protection</div></div>
-        <div class="compare-item"><div class="compare-icon">✅</div><div class="compare-text"><strong>In-tenant AI controls</strong>: Manage data contribution and AI config in-tenant</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>SLA commitments</strong>: Service level commitments carry forward on both paths</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>AI Output ownership</strong>: Customer owns all Outputs on both paths</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>30-day notice for Product Terms changes</strong>: Both paths have this protection</div></div>
+        <div class="compare-item"><div class="compare-icon check">&#10003;</div><div class="compare-text"><strong>In-tenant AI controls</strong>: Manage data contribution and AI config in-tenant</div></div>
       </div>
     </div>
   </div>
@@ -581,27 +581,27 @@
         </tr>
         <tr>
           <td>No training on customer data</td>
-          <td class="wday-col"><span class="check">✅ Contractual</span> (MSA Cl. 3(a) + Amendment)</td>
-          <td><span class="check">✅</span> API/Enterprise only (consumer plans train by default)</td>
-          <td><span class="check">✅ Hard contractual prohibition</span></td>
-          <td><span class="warn-text">⚠ Not explicit in base terms</span></td>
-          <td><span class="check">✅ Contractual</span></td>
-          <td><span class="check">✅</span></td>
-          <td><span class="check">✅ Policy-based</span></td>
-          <td><span class="warn-text">⚠ Opt-out policy via SAP for Me portal, not a hard contractual prohibition by default</span></td>
-          <td><span class="check">✅</span> Per AI Terms (Sept. 2025): <span class="warn-text">but third-party AI components may not be covered</span></td>
+          <td class="wday-col"><span class="check">Contractual</span> (MSA Cl. 3(a) + Amendment)</td>
+          <td><span class="check">Yes</span> API/Enterprise only (consumer plans train by default)</td>
+          <td><span class="check">Hard contractual prohibition</span></td>
+          <td><span class="warn-text">Not explicit in base terms</span></td>
+          <td><span class="check">Contractual</span></td>
+          <td><span class="check">Yes</span></td>
+          <td><span class="check">Policy-based</span></td>
+          <td><span class="warn-text">Opt-out policy via SAP for Me portal, not a hard contractual prohibition by default</span></td>
+          <td><span class="check">Yes</span> Per AI Terms (Sept. 2025): <span class="warn-text">but third-party AI components may not be covered</span></td>
         </tr>
         <tr>
           <td>Breach remediation coverage</td>
-          <td class="wday-col"><span class="check">✅ Outside cap</span>: forensics, notifications, credit monitoring, call center (Cl. 8.3)</td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None</span></td>
-          <td><span class="cross">❌ None in standard terms</span></td>
-          <td><span class="cross">❌ None: 2025 breach showed Oracle directed hospitals to determine their own HIPAA obligations</span></td>
+          <td class="wday-col"><span class="check">Outside cap</span>: forensics, notifications, credit monitoring, call center (Cl. 8.3)</td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None</span></td>
+          <td><span class="cross">None in standard terms</span></td>
+          <td><span class="cross">None: 2025 breach showed Oracle directed hospitals to determine their own HIPAA obligations</span></td>
         </tr>
         <tr>
           <td>Breach notification SLA</td>
@@ -629,27 +629,27 @@
         </tr>
         <tr>
           <td>Customer owns AI outputs</td>
-          <td class="wday-col"><span class="check">✅ Explicit in Universal Amendment</span></td>
-          <td><span class="check">✅ Contractual</span></td>
-          <td><span class="check">✅ Contractual</span></td>
-          <td><span class="warn-text">⚠ Not explicit in base terms</span></td>
-          <td><span class="check">✅ Contractual</span></td>
-          <td><span class="check">✅</span></td>
-          <td><span class="check">✅ Policy-based</span></td>
-          <td><span class="warn-text">⚠ Licensed, not owned: subject to SAP's pre-existing rights in AI models and training data</span></td>
-          <td><span class="warn-text">⚠ Licensed, not owned: Oracle and its licensors retain all IP rights in AI Services and outputs</span></td>
+          <td class="wday-col"><span class="check">Explicit in Universal Amendment</span></td>
+          <td><span class="check">Contractual</span></td>
+          <td><span class="check">Contractual</span></td>
+          <td><span class="warn-text">Not explicit in base terms</span></td>
+          <td><span class="check">Contractual</span></td>
+          <td><span class="check">Yes</span></td>
+          <td><span class="check">Policy-based</span></td>
+          <td><span class="warn-text">Licensed, not owned: subject to SAP's pre-existing rights in AI models and training data</span></td>
+          <td><span class="warn-text">Licensed, not owned: Oracle and its licensors retain all IP rights in AI Services and outputs</span></td>
         </tr>
         <tr>
           <td>Default SLA</td>
-          <td class="wday-col"><span class="check">✅ Per Product Terms; tiered credits for repeat failures</span></td>
-          <td><span class="cross">❌ None: AS IS / AS AVAILABLE</span></td>
-          <td><span class="check">✅ 99.9%</span></td>
-          <td><span class="check">✅ Per-service (99.9–99.999%)</span></td>
-          <td><span class="cross">❌ None standard</span></td>
-          <td><span class="check">✅ 99.9% / 99.99% (Biz Crit.)</span></td>
-          <td><span class="check">✅ Per-service</span></td>
-          <td><span class="check">✅ 99.7% monthly</span>: credits are sole remedy; termination right after 4 consecutive failures</td>
-          <td><span class="check">✅ ~99.5% (Fusion Cloud)</span>: credits are sole remedy; higher tiers available on OCI</td>
+          <td class="wday-col"><span class="check">Per Product Terms; tiered credits for repeat failures</span></td>
+          <td><span class="cross">None: AS IS / AS AVAILABLE</span></td>
+          <td><span class="check">99.9%</span></td>
+          <td><span class="check">Per-service (99.9–99.999%)</span></td>
+          <td><span class="cross">None standard</span></td>
+          <td><span class="check">99.9% / 99.99% (Biz Crit.)</span></td>
+          <td><span class="check">Per-service</span></td>
+          <td><span class="check">99.7% monthly</span>: credits are sole remedy; termination right after 4 consecutive failures</td>
+          <td><span class="check">~99.5% (Fusion Cloud)</span>: credits are sole remedy; higher tiers available on OCI</td>
         </tr>
         <tr>
           <td>Mid-contract term changes</td>
@@ -658,22 +658,22 @@
           <td>Via URL docs (PayGo)</td>
           <td>30 days' notice</td>
           <td>14 days' pricing notice</td>
-          <td><span class="warn-text">⚠ URL incorporation</span></td>
+          <td><span class="warn-text">URL incorporation</span></td>
           <td>Continued use = acceptance</td>
           <td>No material changes mid-term; pricing locked at renewal: <span class="warn-text">watch for 5–7% annual escalators baked into renewals</span></td>
-          <td><span class="warn-text">⚠ Hosting &amp; Delivery Policies updatable unilaterally</span> under "no material reduction" standard: Oracle interprets materiality</td>
+          <td><span class="warn-text">Hosting &amp; Delivery Policies updatable unilaterally</span> under "no material reduction" standard: Oracle interprets materiality</td>
         </tr>
         <tr>
           <td>Data portability on termination</td>
-          <td class="wday-col"><span class="check">✅ 60-day retrieval; machine-readable; up to 3-mo. transition</span></td>
-          <td><span class="cross">❌ No structured mechanism</span></td>
-          <td><span class="check">✅ Delta Lake open format</span></td>
-          <td><span class="check">✅ Free Cloud Exit program</span></td>
-          <td><span class="cross">❌ No structured mechanism</span></td>
+          <td class="wday-col"><span class="check">60-day retrieval; machine-readable; up to 3-mo. transition</span></td>
+          <td><span class="cross">No structured mechanism</span></td>
+          <td><span class="check">Delta Lake open format</span></td>
+          <td><span class="check">Free Cloud Exit program</span></td>
+          <td><span class="cross">No structured mechanism</span></td>
           <td>30-day self-service</td>
           <td>Standard</td>
           <td>30–90 days (product-specific; SuccessFactors typically 30 days): negotiate format and window</td>
-          <td><span class="check">✅ 60-day post-termination retrieval window</span>, machine-readable format: same as Workday standard</td>
+          <td><span class="check">60-day post-termination retrieval window</span>, machine-readable format: same as Workday standard</td>
         </tr>
       </tbody>
     </table>
@@ -682,22 +682,18 @@
   <div class="section-label">Where Workday goes further</div>
   <div class="grid-2">
     <div class="diff-card">
-      <div class="diff-icon">🛡️</div>
       <div class="diff-title">Breach remediation costs are outside the liability cap</div>
       <div class="diff-body">Workday contractually pays for forensic investigation, breach notifications, one year of credit monitoring, and one year of call center services from its own pocket, outside the standard liability cap. No other major vendor in this peer group includes this in standard terms. The industry norm is to count remediation costs against the cap or exclude them entirely.</div>
     </div>
     <div class="diff-card">
-      <div class="diff-icon">⏱️</div>
       <div class="diff-title">48-hour breach notification (contractual, not aspirational)</div>
       <div class="diff-body">Workday commits to a 48-hour breach notification window in the contract itself. Most peers use "without undue delay" language (GCP, OpenAI) or 72-hour windows (SAP, Oracle, Snowflake). The 48-hour commitment is among the strongest in the peer group and is backed by a contractual obligation, not just a policy.</div>
     </div>
     <div class="diff-card">
-      <div class="diff-icon">📈</div>
       <div class="diff-title">Enhanced 24-month liability cap for security and privacy breaches</div>
       <div class="diff-body">For breaches of confidentiality, security, or privacy, the liability cap doubles to 24 months of fees, on top of the remediation costs that sit outside the cap entirely. Most peers cap at 12 months (GCP, AWS, OpenAI, SAP, Oracle). Databricks and Snowflake use a 2x fee structure, which is comparable but does not include the separate remediation carve-out.</div>
     </div>
     <div class="diff-card">
-      <div class="diff-icon">📋</div>
       <div class="diff-title">One agreement covers all Workday products</div>
       <div class="diff-body">The uMSA is product-agnostic. A single agreement governs every Workday SaaS offering, with product-specific details captured in Product Terms rather than separate addenda. Most competitors use layered document stacks: base terms plus service-specific agreements, DPAs, AI terms, SLA schedules, and order forms. Each new Workday product a customer adopts does not require a new contract negotiation.</div>
     </div>

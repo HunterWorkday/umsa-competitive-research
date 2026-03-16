@@ -567,6 +567,8 @@
           <th style="color:#6ee7b7">OpenAI</th>
           <th style="color:#7dd3fc">Snowflake</th>
           <th style="color:#fcd34d">AWS</th>
+          <th style="color:#a78bfa">SAP</th>
+          <th style="color:#fb923c">Oracle</th>
         </tr>
       </thead>
       <tbody>
@@ -579,6 +581,8 @@
           <td>Layered (Services Agmt + DPA)</td>
           <td>ToS + URL-incorporated docs</td>
           <td>Multi-doc stack</td>
+          <td>GTC + DPA + AI Terms + SLA Schedule + Order Form</td>
+          <td>CSA + DPA + AI Terms + Hosting &amp; Delivery Policies + Order Doc — policies updatable by Oracle</td>
         </tr>
         <tr>
           <td>No training on customer data</td>
@@ -589,6 +593,8 @@
           <td><span class="check">✅ Contractual</span></td>
           <td><span class="check">✅</span></td>
           <td><span class="check">✅ Policy-based</span></td>
+          <td><span class="warn-text">⚠ Opt-out policy via SAP for Me portal — not a hard contractual prohibition by default</span></td>
+          <td><span class="check">✅</span> Per AI Terms (Sept. 2025) — <span class="warn-text">but third-party AI components may not be covered</span></td>
         </tr>
         <tr>
           <td>Breach remediation coverage</td>
@@ -599,6 +605,8 @@
           <td><span class="cross">❌ None</span></td>
           <td><span class="cross">❌ None</span></td>
           <td><span class="cross">❌ None</span></td>
+          <td><span class="cross">❌ None in standard terms</span></td>
+          <td><span class="cross">❌ None — 2025 breach showed Oracle directed hospitals to determine their own HIPAA obligations</span></td>
         </tr>
         <tr>
           <td>Breach notification SLA</td>
@@ -609,6 +617,8 @@
           <td><span class="warn-text">"Without undue delay"</span></td>
           <td>72 hours (DPA) — <span class="warn-text">took 45 days in 2024</span></td>
           <td>Varies</td>
+          <td>72 hours (DPA, per GDPR Art. 33)</td>
+          <td>72 hours (SaaS/Cloud DPA) — <span class="warn-text">2025 breach: Oracle communicated only verbally, no written documentation provided</span></td>
         </tr>
         <tr>
           <td>Liability cap (security/privacy breach)</td>
@@ -619,6 +629,8 @@
           <td>12-month</td>
           <td>2x fees (data protection)</td>
           <td>12-month</td>
+          <td>12-month fees — no enhanced breach cap in standard terms; must negotiate</td>
+          <td>12-month fees — no enhanced breach cap in standard terms; must negotiate</td>
         </tr>
         <tr>
           <td>Customer owns AI outputs</td>
@@ -629,6 +641,8 @@
           <td><span class="check">✅ Contractual</span></td>
           <td><span class="check">✅</span></td>
           <td><span class="check">✅ Policy-based</span></td>
+          <td><span class="warn-text">⚠ Licensed, not owned — subject to SAP's pre-existing rights in AI models and training data</span></td>
+          <td><span class="warn-text">⚠ Licensed, not owned — Oracle and its licensors retain all IP rights in AI Services and outputs</span></td>
         </tr>
         <tr>
           <td>Default SLA</td>
@@ -639,6 +653,8 @@
           <td><span class="cross">❌ None standard</span></td>
           <td><span class="check">✅ 99.9% / 99.99% (Biz Crit.)</span></td>
           <td><span class="check">✅ Per-service</span></td>
+          <td><span class="check">✅ 99.7% monthly</span> — credits are sole remedy; termination right after 4 consecutive failures</td>
+          <td><span class="check">✅ ~99.5% (Fusion Cloud)</span> — credits are sole remedy; higher tiers available on OCI</td>
         </tr>
         <tr>
           <td>Mid-contract term changes</td>
@@ -649,6 +665,8 @@
           <td>14 days' pricing notice</td>
           <td><span class="warn-text">⚠ URL incorporation</span></td>
           <td>Continued use = acceptance</td>
+          <td>No material changes mid-term; pricing locked at renewal — <span class="warn-text">watch for 5–7% annual escalators baked into renewals</span></td>
+          <td><span class="warn-text">⚠ Hosting &amp; Delivery Policies updatable unilaterally</span> under "no material reduction" standard — Oracle interprets materiality</td>
         </tr>
         <tr>
           <td>Data portability on termination</td>
@@ -659,6 +677,8 @@
           <td><span class="cross">❌ No structured mechanism</span></td>
           <td>30-day self-service</td>
           <td>Standard</td>
+          <td>30–90 days (product-specific; SuccessFactors typically 30 days) — negotiate format and window</td>
+          <td><span class="check">✅ 60-day post-termination retrieval window</span>, machine-readable format — same as Workday standard</td>
         </tr>
       </tbody>
     </table>
@@ -722,6 +742,26 @@
         <li>12-month liability cap; no breach-specific enhancement in standard terms</li>
         <li>No-training commitment is policy-based, not a standalone contractual obligation</li>
         <li>SLA is per-service — requires knowing exactly which services are in scope</li>
+      </ul>
+    </div>
+    <div class="gotcha-card">
+      <div class="vendor-name" style="color:#a78bfa">SAP</div>
+      <ul class="gotcha-list">
+        <li>AI data use is opt-out policy via SAP for Me — not a hard contractual prohibition; enterprise customers pushed back publicly in 2024</li>
+        <li>AI output ownership: customer receives a license, not unencumbered IP ownership — outputs are subject to SAP's pre-existing rights in models and training data</li>
+        <li>RISE with SAP bundles create deep lock-in — infrastructure, software, and services under one SAP-managed contract; exit is complex</li>
+        <li>Renewal escalators of 5–7% annually compound quickly; credit conversion for on-prem customers decreases ~10% per year creating time-pressure</li>
+        <li>Licensing metrics (FUE, named users, digital documents) are complex — indirect access and API integrations can trigger unexpected true-up charges</li>
+      </ul>
+    </div>
+    <div class="gotcha-card">
+      <div class="vendor-name" style="color:#fb923c">Oracle</div>
+      <ul class="gotcha-list">
+        <li>2025 Oracle Health breach: Oracle communicated only by phone, asked hospitals to delay notifications, provided no written documentation — direct HIPAA exposure for customers</li>
+        <li>Hosting &amp; Delivery Policies incorporated by reference and updatable unilaterally — Oracle determines what counts as "no material reduction"</li>
+        <li>HIPAA BAA requires a separate paid add-on license ("HIPAA Advanced Security for Fusion SaaS") — not automatic</li>
+        <li>AI output ownership: Oracle and its licensors retain all IP rights in AI Services; customers receive a license only</li>
+        <li>PO subordination trap: Oracle's ordering documents override any conflicting purchase order boilerplate — protective terms must be in the Oracle doc, not the PO</li>
       </ul>
     </div>
   </div>

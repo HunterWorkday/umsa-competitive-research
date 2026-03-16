@@ -380,21 +380,32 @@
 
     <div class="objection-card">
       <div class="objection-header open" onclick="toggleObj(this)">
-        <span class="objection-quote">"Workday is going to train on our data."</span>
+        <span class="objection-quote">"I don't want Workday training on our data. And I want to opt in, not opt out."</span>
         <span class="objection-chevron">▼</span>
       </div>
       <div class="objection-body open">
         <div class="obj-row">
           <div class="obj-label">What they're really worried about</div>
-          <div class="obj-value">They've seen news about AI companies training on customer data. They assume Workday operates the same way. Often triggered by the word "AI" appearing in the new contract framework.</div>
+          <div class="obj-value">Two separate concerns often get conflated into one objection. First: does Workday use customer data to train AI models? Second: is the customer in control of that decision, or is it enabled by default and buried in settings? The UMSA migration makes this feel more urgent because the old ISA framework had granular opt-in tasks that customers understood. The new in-tenant model is less familiar, and customers assume that means less control.</div>
         </div>
         <div class="obj-row">
-          <div class="obj-label">Approved positioning</div>
-          <div class="obj-value"><strong>Workday does not train external AI or ML models on Customer Content. It's in the contract.</strong> MSA Cl. 3(a): Customer Content is used only to provide the Service. The Universal Amendment adds an explicit statement confirming this. This is a contractual obligation, not a policy document that can be updated quietly.<br><br>Important distinction: "data contribution" is separate from training. Data contribution refers to opt-in/opt-out of using anonymized, aggregated signals to improve Workday models. The customer controls this toggle in-tenant. Training on identifiable Customer Content is prohibited, period.</div>
+          <div class="obj-label">The two concepts you must separate in the conversation</div>
+          <div class="obj-value">
+            <strong>1. Training on Customer Content: contractually prohibited.</strong> MSA Cl. 3(a) and the Universal Amendment both state that Customer Content is used only to provide the Service. Workday cannot and does not train external AI or ML models on identifiable customer data. This is a contractual obligation, not a policy that can be quietly updated.<br><br>
+            <strong>2. Data contribution: a separate, customer-controlled setting.</strong> Data contribution refers to whether anonymized, aggregated signals from the customer's tenant are used to improve Workday models (for example, improving benchmark accuracy or feature recommendations). This is <em>not</em> training on customer data. It is an opt-out model: enabled by default, but the customer can disable it at any time directly in the Workday tenant. Workday does not require data contribution to use any product.
+          </div>
+        </div>
+        <div class="obj-row">
+          <div class="obj-label">Why the model changed from ISA to UMSA</div>
+          <div class="obj-value">Under the old ISA framework, customers configured data usage through granular opt-in tasks at the time of feature activation. That model is being retired. Under UMSA, customers manage data contribution and AI configuration directly in-tenant throughout the subscription term, rather than at signing. The control is the same; the mechanism is different. Customers who want a more restrictive posture can disable data contribution in-tenant without needing a contract amendment.</div>
+        </div>
+        <div class="obj-row">
+          <div class="obj-label">Approved talk track</div>
+          <div class="obj-value">"Workday does not train on your data. That's a contractual prohibition in the MSA, not a setting. What you may be thinking of is data contribution, which is a separate opt-out toggle you control in-tenant. If you want it off, you can turn it off today. Migrating to UMSA does not change what Workday can do with your data; it changes where you manage that decision: from signing-time tasks to an in-tenant control you can adjust any time."</div>
         </div>
         <div class="obj-row">
           <div class="obj-label">When to escalate</div>
-          <div class="obj-value obj-escalate">If the customer wants to add custom AI data use language beyond what the contract provides, loop in Legal. Bespoke AI addenda are not on the table, but there are standard paths for transparency requests.</div>
+          <div class="obj-value obj-escalate">If the customer wants to negotiate a contractual opt-in requirement for data contribution (rather than using the in-tenant opt-out), loop in Legal. The standard position is that the in-tenant control satisfies this. Bespoke data use addenda are not on the table.</div>
         </div>
         <div class="obj-row">
           <div class="obj-label">Resource to send</div>
